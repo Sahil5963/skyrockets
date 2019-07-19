@@ -1,0 +1,86 @@
+.footer {
+  background: #1e1e1e;
+  color: rgba(#fff, 0.6);
+  &__sections {
+    padding: 2rem 1rem;
+  }
+
+  &__brand-name {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  &__section {
+    padding: 2rem 2rem;
+    &__heading {
+      font-weight: 600;
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      margin: 1rem 0rem;
+      font-kerning: normal;
+      font-size: 0.86rem;
+      word-spacing: 2px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0rem;
+  }
+
+  &__links {
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.5rem 0rem;
+    color: rgba(#fff, 0.3);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+  &__form {
+    width: 100%;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.6rem 0.6rem;
+      border: none;
+      font-size: 0.86rem;
+      background: rgba(#fff, 0.06);
+      margin-bottom: 0.6rem;
+      color: #fff;
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      height: 120px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 0.6rem 0.4rem;
+    background: #5724ff;
+    font-size: 0.9rem;
+    border: none;
+    transition: all 0.2s;
+    color: #fff;
+    font-weight: 500;
+
+    &:hover {
+      background: #4813fc;
+      box-shadow: 1px 2px 12px rgba(#4813fc, 0.5);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.chips {
+  margin: 1rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  color: rgba(#000, 0.7);
+  border: none;
+  background: rgba(#000, 0.12);
+  padding: 0.3rem 1rem;
+  border-radius: 120px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(#4813fc, 0.3);
+    outline: none;
+  }
+}

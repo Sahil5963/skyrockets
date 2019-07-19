@@ -1,0 +1,113 @@
+.profile-section {
+  display: grid;
+  margin: 3rem auto;
+  width: 90%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.8rem;
+
+  &__header {
+    grid-column: 1/-1;
+
+    &--mobile {
+      display: none;
+      @media only screen and (max-width: 740px) {
+        display: block;
+      }
+    }
+    &--desk {
+      @media only screen and (max-width: 740px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 740px) {
+      grid-column: 1/-1;
+    }
+  }
+
+  &__name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    .bold {
+      font-weight: 700;
+    }
+  }
+  &__designation {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    background: rgba(#4813fc, 0.14);
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4813fc;
+    display: inline-block;
+    border-radius: 120px;
+    @media only screen and (max-width: 740px) {
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  &__image {
+    grid-column: 1/4;
+    @media only screen and (max-width: 740px) {
+      grid-column: 1/-1;
+    }
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 12px rgba(#000, 0.18);
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    grid-column: 4/-1;
+    @media only screen and (max-width: 740px) {
+      grid-column: 1/-1;
+    }
+    box-shadow: 1px 2px 14px rgba(#000, 0.22);
+    padding: 1rem 2rem;
+  }
+
+  p {
+    font-size: 0.96rem;
+    color: rgba(#000, 0.7);
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  &__sub-heading {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: rgba(#000, 0.9);
+  }
+
+  &__skill {
+    font-size: 0.96rem !important;
+    padding: 1rem;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.4rem 1rem;
+    justify-content: space-around;
+    img {
+      width: 80px;
+      margin: 1rem;
+    }
+  }
+
+  &__contact {
+    padding: 1rem;
+    color: rgba(#000, 0.7);
+    font-size: 0.9rem;
+    font-weight: 600;
+    label {
+      font-weight: 700;
+      color: #000;
+    }
+  }
+}

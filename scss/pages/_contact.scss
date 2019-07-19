@@ -1,0 +1,88 @@
+.contact {
+  &__content {
+    background: #fff;
+    width: 88%;
+    border-radius: 18px;
+    padding: 4rem 3rem;
+    margin: auto;
+    box-shadow: 2px 3px 26px rgba(0, 0, 0, 0.2);
+
+    @media only screen and (max-width: 420px) {
+      padding: 2rem 1.4rem;
+    }
+
+    &__heading {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: rgb(41, 41, 41);
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin: 2rem 0rem;
+      color: rgb(112, 112, 112);
+      font-weight: 400;
+      font-size: 0.93rem;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    input,
+    textarea {
+      padding: 0.8rem 1rem;
+      border: none;
+      font-size: 0.9rem;
+      margin: 0.4rem 0rem;
+      border: 1px solid transparent;
+      background: rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        background: rgb(229, 229, 229);
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    textarea {
+      min-height: 260px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    margin: 0.6rem;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 120px;
+    transition: all 0.2s;
+    font-weight: 600;
+    &:focus {
+      outline: none;
+    }
+
+    &--primary {
+      background: #4813fc;
+      color: #fff;
+
+      &:hover {
+        box-shadow: 1px 2px 20px rgba(#4813fc, 0.5);
+      }
+    }
+
+    &--secondary {
+      color: rgb(44, 44, 44);
+      background: rgb(231, 231, 231);
+      &:hover {
+        box-shadow: inset 1px 2px 20px rgba(rgb(0, 0, 0), 0.2);
+      }
+    }
+  }
+}

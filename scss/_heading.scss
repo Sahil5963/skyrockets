@@ -1,0 +1,47 @@
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 1.4;
+
+  @media only screen and (max-width: 460px) {
+    font-size: 1.8rem;
+  }
+
+  &--linned {
+    position: relative;
+    &::before {
+      position: absolute;
+      background: #ccc2ff;
+      height: 20px;
+      width: 106%;
+      left: 0;
+      z-index: -1;
+      bottom: 0;
+      content: "";
+    }
+  }
+
+  &--light {
+    position: relative;
+    line-height: 1.8;
+    &::before {
+      position: absolute;
+      background: #5c00fc;
+      height: 7px;
+      width: 20%;
+      left: 4px;
+      z-index: -1;
+      bottom: 0;
+      content: "";
+      @media only screen and (max-width: 460px) {
+        display: none;
+      }
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+}

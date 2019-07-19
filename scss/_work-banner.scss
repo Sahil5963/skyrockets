@@ -1,0 +1,100 @@
+.work-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  &__bg1 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-width: 1600px;
+    object-fit: cover;
+    bottom: 0;
+    height: 100%;
+
+    @media only screen and (max-width: 700px) {
+      min-width: 100%;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    align-items: center;
+    width: 86%;
+    grid-gap: 1rem;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+
+    @media only screen and (max-width: 700px) {
+      margin-top: 120px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__content {
+    color: #fff;
+
+    grid-column: 1/6;
+
+    @media only screen and (max-width: 400px) {
+      padding: 2rem 1.4rem;
+      border-radius: 12px;
+    }
+    @media only screen and (max-width: 900px) {
+      grid-column: 1/7;
+    }
+    @media only screen and (max-width: 700px) {
+      grid-column: 1/-1;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 0.9rem;
+      margin: 1rem 0rem;
+    }
+  }
+
+  &__image {
+    grid-column: 6/-1;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 900px) {
+      grid-column: 7/-1;
+    }
+
+    @media only screen and (max-width: 700px) {
+      grid-column: 1/-1;
+    }
+    svg {
+      width: 420px;
+      @media only screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: 400px) {
+        width: 90%;
+      }
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    span {
+      font-weight: 300;
+    }
+
+    &--small {
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+  }
+}

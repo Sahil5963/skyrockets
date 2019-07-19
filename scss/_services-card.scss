@@ -1,0 +1,58 @@
+.services-card {
+  background: transparent;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  border-radius: 6px;
+  box-shadow: 1px 2px 30px rgba(#000, 0.18);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  @media only screen and (max-width: 400px) {
+    margin: 0.5rem 0.2rem;
+    padding: 1.6rem 1.2rem;
+  }
+
+  &__men2 {
+    @media only screen and (max-width: 980px) {
+      height: 220px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &::before {
+    content: "";
+    transition: all 0.2s ease-in-out;
+    top: 0;
+    border-radius: 6px;
+    left: 0;
+    position: absolute;
+    background: #4813fc;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    z-index: -1;
+    transform: scaleX(0.9);
+  }
+
+  &:hover {
+    &::before {
+      transform: scale(1);
+      transform-origin: center;
+      opacity: 1;
+    }
+    box-shadow: 1px 2px 30px rgba(#4813fc, 0.4);
+    color: white;
+    cursor: pointer;
+  }
+
+  &__heading {
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+  }
+}

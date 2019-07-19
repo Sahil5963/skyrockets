@@ -1,0 +1,242 @@
+.project-section {
+  display: grid;
+  margin: 3rem auto;
+  width: 96%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.8rem;
+
+  &__header {
+    grid-column: 1/-1;
+
+    &--mobile {
+      display: none;
+      @media only screen and (max-width: 740px) {
+        display: block;
+      }
+    }
+    &--desk {
+      @media only screen and (max-width: 740px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 740px) {
+      grid-column: 1/-1;
+    }
+  }
+
+  &__name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+  &__designation {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    background: rgba(#4813fc, 0.14);
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4813fc;
+    display: inline-block;
+    border-radius: 120px;
+    @media only screen and (max-width: 740px) {
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  &__image {
+    grid-column: 1/4;
+    @media only screen and (max-width: 740px) {
+      grid-column: 1/-1;
+    }
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 12px rgba(#000, 0.16);
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    grid-column: 4/-1;
+    @media only screen and (max-width: 740px) {
+      grid-column: 1/-1;
+    }
+    box-shadow: 1px 2px 14px rgba(#000, 0.16);
+    padding: 2rem 2rem;
+  }
+
+  p {
+    font-size: 0.96rem;
+    color: rgba(#000, 0.7);
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  &__sub-heading {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: rgba(#000, 0.9);
+  }
+
+  &__technologies {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__divider {
+    height: 1px;
+    background: #cccccc;
+    margin: 2rem 0rem;
+    width: 98%;
+  }
+  &__technology {
+    background: #2b55ff;
+    padding: 0.4rem 1rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 120px;
+
+    margin: 0.6rem;
+  }
+
+  &__feature {
+    &__list {
+      list-style-type: circle;
+    }
+
+    &__item {
+      font-size: 0.96rem;
+      color: rgba(#000, 0.7);
+      font-weight: 400;
+      line-height: 1.7;
+    }
+  }
+
+  &__members {
+    &__avtars {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2rem 0rem;
+    }
+
+    &__avtar {
+      display: flex;
+      justify-items: center;
+
+      margin: 1rem;
+
+      &__image {
+        margin-right: 0.6rem;
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+      &__content {
+        align-self: center;
+      }
+
+      &__name {
+        margin-bottom: 0rem;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+      &__role {
+        font-weight: 600;
+        font-size: 0.76rem;
+        color: #9e9e9e;
+      }
+    }
+  }
+
+  &__appreciate {
+    display: grid;
+    margin: 2rem 0rem;
+    align-items: center;
+    justify-items: center;
+    button {
+      background: #0033ff;
+      padding: 0.7rem 2rem;
+      border: none;
+      border-radius: 120px;
+      color: #fff;
+      transition: all 0.2s;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 1px 3px 16px rgba(#0033ff, 0.4);
+
+        span {
+          transform: scale(1.3);
+        }
+      }
+
+      span {
+        position: absolute;
+        background: #0033ff;
+        transition: all 0.2s;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        top: -16px;
+        box-shadow: 1px 2px 4px rgba(#000, 0.3);
+        display: grid;
+        right: -10px;
+        align-items: center;
+        justify-items: center;
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+
+  &__contribute {
+    display: flex;
+
+    padding: 1.4rem 0.6rem;
+    justify-content: space-around;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      label {
+        color: #818181;
+        font-size: 0.8rem;
+      }
+
+      img {
+        width: 110px;
+        margin: 0rem;
+        justify-content: center;
+        align-self: center;
+      }
+    }
+  }
+
+  &__info {
+    padding: 1rem 1.2rem;
+    color: rgba(#000, 0.7);
+    font-size: 0.96rem;
+    font-weight: 600;
+    label {
+      font-weight: 700;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.community-members-section {
+  padding: 2rem;
+
+  @media only screen and (max-width: 460px) {
+    padding: 1.6rem 0.6rem;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.8rem;
+  }
+}

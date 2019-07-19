@@ -1,0 +1,43 @@
+.work-collection {
+  &__header {
+  }
+  &__heading {
+  }
+  &__filters {
+    margin: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__filter {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: rgba(#000, 0.7);
+    border: none;
+    background: rgba(#000, 0.12);
+    padding: 0.3rem 1.2rem;
+    border-radius: 120px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover,
+    &:focus {
+      background: rgba(#4813fc, 0.3);
+      outline: none;
+    }
+  }
+
+  &__items {
+    margin: 3rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1.4rem;
+    height: 100%;
+    align-items: stretch;
+    justify-items: stretch;
+  }
+}

@@ -1,0 +1,108 @@
+.community-section {
+  overflow: hidden;
+  background: url("../../image/svg/community-bg1.svg");
+  background-position: 50% 110%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+
+  &__inner {
+    @media only screen and (max-width: 400px) {
+      margin: 0rem 0.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    background-position: top;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+
+    text-align: center;
+    color: #fff;
+    margin: 3rem 0rem 2rem 0rem;
+    line-height: 1.8;
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 6px;
+      background: #ff0099;
+      width: 102%;
+      left: 0;
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
+
+      bottom: 0;
+    }
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__image1 {
+    height: 360px;
+    margin: 2rem 0rem;
+    display: block;
+
+    @media only screen and (max-width: 620px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__cards {
+    margin: 0 3rem;
+
+    @media only screen and (max-width: 700px) {
+      margin: 0;
+    }
+  }
+
+  &__card {
+    padding: 3rem 3rem;
+    margin: 2rem;
+    background: #fff;
+    border-radius: 26px;
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.3);
+    @media only screen and (max-width: 700px) {
+      padding: 2rem 1.6rem;
+      border-radius: 12px;
+      margin: 0.4rem 0.8rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding: 2rem 1.6rem;
+      border-radius: 12px;
+      margin: 0.4rem 0rem;
+    }
+
+    &:hover {
+      box-shadow: 1px 2px 34px rgba(0, 0, 0, 0.3);
+    }
+
+    &--colored {
+      background: #ff1ea5;
+      color: #fff;
+    }
+
+    &__heading {
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 2;
+    }
+  }
+}

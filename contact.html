@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <title>Index</title>
+  </head>
+  <body>
+    <nav class="navbar navbar--desktop navbar--transparent">
+      <div class="navbar__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.211 49.342">
+          <g transform="translate(-72 -27.028)">
+            <path
+              class="a"
+              d="M11.337,0A11.337,11.337,0,1,1,0,11.337,11.337,11.337,0,0,1,11.337,0Z"
+              transform="translate(72 52.115)"
+            />
+            <path
+              class="b"
+              d="M1.237,3.789l-8.982-14.57L28.5-4.119l4.7,19.533L-4.21,25.894Z"
+              transform="translate(97.044 49.46) rotate(-22)"
+            />
+            <text class="c" transform="translate(149.211 62.376)">
+              <tspan x="0" y="0">Sky Rockets</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="about.html" class="navbar__link">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="work.html" class="navbar__link">Work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="profiles.html" class="navbar__link">Profiles</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__link active">Contact</a>
+        </li>
+      </ul>
+
+      <div class="navbar__toggler" data-open="false">
+        <span class="navbar__toggler__bar"></span>
+        <span class="navbar__toggler__bar"></span>
+        <span class="navbar__toggler__bar"></span>
+      </div>
+    </nav>
+
+    <div class="mobile-nav">
+      <div class="mobile-nav__bg"></div>
+
+      <div class="mobile-nav__header">
+        <div class="mobile-nav__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.211 49.342">
+            <g transform="translate(-72 -27.028)">
+              <path
+                class="a"
+                d="M11.337,0A11.337,11.337,0,1,1,0,11.337,11.337,11.337,0,0,1,11.337,0Z"
+                transform="translate(72 52.115)"
+              />
+              <path
+                class="b"
+                d="M1.237,3.789l-8.982-14.57L28.5-4.119l4.7,19.533L-4.21,25.894Z"
+                transform="translate(97.044 49.46) rotate(-22)"
+              />
+              <text class="c" transform="translate(149.211 62.376)">
+                <tspan x="0" y="0">Sky Rockets</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="mobile-nav__toggler">
+          <img src="./image/svg/close.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="mobile-nav__content">
+        <div class="mobile-nav__list">
+          <a href="index.html" class="mobile-nav__link">Home</a>
+          <a href="about.html" class="mobile-nav__link">About</a>
+          <a href="work.html" class="mobile-nav__link">Work</a>
+          <a href="profiles.html" class="mobile-nav__link">Profiles</a>
+          <a href="contact.html" class="mobile-nav__link active">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-page waterfall">
+      <img
+        src="./image/svg/waterfall-bg1.svg"
+        alt=""
+        class="waterfall__bg1 contact__bg1"
+      />
+
+      <div class="waterfall__banner">
+        <div class="waterfall__banner__header contact__header">
+          <h2 class="waterfall__banner__heading contact__heading">
+            Contact <span>us</span>
+          </h2>
+        </div>
+
+        <div class="waterfall__banner__image contact__image">
+          <img src="./image/svg/contact-us-image1.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="contact__content">
+        <h4 class="contact__content__heading">Message us and stay connected</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum beatae
+          enim distinctio porro eligendi rem, cumque labore numquam, dolorem
+          necessitatibus sequi dolore harum, eos quidem consequuntur quo qui.
+          Reiciendis, nemo.
+        </p>
+
+        <form action="" class="contact__form">
+          <input type="text" placeholder="Enter your name" /><br />
+          <input type="email" placeholder="Enter your email" /><br />
+          <textarea
+            name="message"
+            id=""
+            placeholder="Type your message.."
+          ></textarea>
+          <div class="contact__form__buttons">
+            <button class="contact__btn contact__btn--primary">Submit</button>
+            <button class="contact__btn contact__btn--secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer container-fluid">
+      <div class="row footer__sections">
+        <div class="col-md-3 footer__section footer__section--contact">
+          <h3 class="footer__brand-name">Sky Rockets</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            nesciunt ipsa nisi reprehenderit beatae cupiditate odio asperiores
+            praesentium quos porro.
+          </p>
+        </div>
+        <div class="col-md-3 footer__section footer__section--links">
+          <h4 class="footer__section__heading">
+            External Links
+          </h4>
+
+          <ul class="footer__list">
+            <li><a href="" class="footer__links">Home</a></li>
+            <li><a href="" class="footer__links">contact</a></li>
+            <li><a href="" class="footer__links">Showcase</a></li>
+            <li><a href="" class="footer__links">Profiles</a></li>
+            <li><a href="" class="footer__links">Projects</a></li>
+            <li><a href="" class="footer__links">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer__section footer__section--news">
+          <h4 class="footer__section__heading">
+            Newsletters
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            earum a expedita provident debitis commodi.
+          </p>
+          <form action="" class="footer__form">
+            <input
+              type="email"
+              class="footer__input"
+              placeholder="Enter your email"
+            /><br />
+            <button class="footer__btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-3 footer__section footer__section--contact">
+          <h4 class="footer__section__heading">
+            Contact us
+          </h4>
+
+          <form action="" class="footer__form">
+            <input
+              type="email"
+              class="footer__input"
+              placeholder="Enter your email"
+            /><br />
+            <textarea placeholder="Enter your message.."></textarea><br />
+            <button class="footer__btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ModifiersPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <!-- <script>
+      var logo = document.querySelector(".cloud1");
+
+      TweenMax.to(logo, 7, {
+        x: 200,
+        repeat: -1,
+
+        yoyo: true
+      });
+    </script> -->
+  </body>
+</html>

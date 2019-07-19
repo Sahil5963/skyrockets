@@ -1,0 +1,24 @@
+.services-section {
+  padding: 2rem 1rem;
+  max-width: 1240px;
+
+  &__men {
+    display: flex;
+    align-items: center;
+    img {
+      width: 70%;
+      align-self: center;
+
+      @media only screen and (max-width: 980px) {
+        display: none;
+      }
+    }
+  }
+
+  &__cards {
+    margin: 2rem 2rem;
+    @media only screen and (max-width: 400px) {
+      margin: 0rem;
+    }
+  }
+}
