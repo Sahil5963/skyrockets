@@ -33,6 +33,10 @@ body {
   font-family: "Open Sans", sans-serif !important;
 }
 
+.disable-scrolling {
+  overflow: hidden;
+}
+
 .nav-fixer {
   height: 64px;
   width: 100%;
@@ -322,7 +326,7 @@ a:hover {
   height: 100%;
   padding: 0 1rem;
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.62);
   text-decoration: none;
   position: relative;
   display: -webkit-box;
@@ -1228,6 +1232,7 @@ a:hover {
 .community-section__card {
   padding: 3rem 3rem;
   margin: 2rem;
+  height: 100%;
   background: #fff;
   border-radius: 26px;
   -webkit-box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.3);
@@ -1845,7 +1850,7 @@ a:hover {
   display: -ms-grid;
   display: grid;
   margin: 3rem auto;
-  width: 90%;
+  width: 86%;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.8rem;
@@ -1879,7 +1884,7 @@ a:hover {
 
 .profile-section__name {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -1890,8 +1895,8 @@ a:hover {
 .profile-section__designation {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
-  background: rgba(72, 19, 252, 0.14);
-  padding: 0.6rem 1.4rem;
+  background: rgba(72, 19, 252, 0.1);
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
   font-weight: 600;
   color: #4813fc;
@@ -1917,8 +1922,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.18);
-          box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 @media only screen and (max-width: 740px) {
@@ -1928,13 +1931,13 @@ a:hover {
 }
 
 .profile-section__image img {
-  width: 100%;
+  margin: 0.2rem auto;
+  border-radius: 50%;
+  width: 80%;
 }
 
 .profile-section__content {
   grid-column: 4/-1;
-  -webkit-box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.22);
-          box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.22);
   padding: 1rem 2rem;
 }
 
@@ -1945,10 +1948,10 @@ a:hover {
 }
 
 .profile-section p {
-  font-size: 0.96rem;
-  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.9);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .profile-section__sub-heading {
@@ -1974,8 +1977,9 @@ a:hover {
 }
 
 .profile-section__social img {
-  width: 80px;
-  margin: 1rem;
+  width: 60px;
+  margin: 0.4rem;
+  border-radius: 0;
 }
 
 .profile-section__contact {
@@ -1993,7 +1997,7 @@ a:hover {
 .project-section {
   display: -ms-grid;
   display: grid;
-  margin: 3rem auto;
+  margin: 1rem auto;
   width: 96%;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
@@ -2030,7 +2034,15 @@ a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .project-section__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+  }
 }
 
 .project-section__designation {
@@ -2054,8 +2066,8 @@ a:hover {
 
 .project-section__image {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2078,7 +2090,7 @@ a:hover {
 }
 
 .project-section__content {
-  grid-column: 4/-1;
+  grid-column: 5/-1;
   -webkit-box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.16);
           box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.16);
   padding: 2rem 2rem;
@@ -2088,6 +2100,65 @@ a:hover {
   .project-section__content {
     grid-column: 1/-1;
   }
+}
+
+.project-section__full-width {
+  grid-column: 1/-1;
+}
+
+.project-section__screens {
+  width: 100%;
+}
+
+.project-section__screens__heading {
+  margin-bottom: 2rem;
+}
+
+.project-section__screens__item {
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-section__screens__item__label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.6rem;
+  color: #6e6e6e;
+  margin: 0;
+}
+
+.project-section__screens__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 0.8rem;
+}
+
+.project-section__screens__items--half {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0.8rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .project-section__screens__items--half {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.project-section__screens img {
+  width: 100%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.project-section__screens img:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .project-section p {
@@ -2252,7 +2323,7 @@ a:hover {
       justify-content: space-around;
 }
 
-.project-section__contribute div {
+.project-section__contribute a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2262,16 +2333,16 @@ a:hover {
           flex-direction: column;
 }
 
-.project-section__contribute div:not(:last-child) {
+.project-section__contribute a:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.project-section__contribute div label {
+.project-section__contribute a label {
   color: #818181;
   font-size: 0.8rem;
 }
 
-.project-section__contribute div img {
+.project-section__contribute a img {
   width: 110px;
   margin: 0rem;
   -webkit-box-pack: center;
@@ -2330,8 +2401,8 @@ a:hover {
   margin: 3rem 0rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1.4rem;
   height: 100%;
   -webkit-box-align: stretch;
@@ -2350,6 +2421,7 @@ a:hover {
           flex-direction: column;
   border-radius: 6px;
   position: relative;
+  height: 100%;
   overflow: hidden;
   -webkit-box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.16);
           box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.16);
@@ -2360,11 +2432,28 @@ a:hover {
 .project-card:hover {
   -webkit-box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.26);
           box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+.project-card:hover .project-card__image:before {
+  background: transparent;
+}
+
+.project-card__image {
+  position: relative;
+}
+
+.project-card__image::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100%;
 }
 
 .project-card__image img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
 }
 
@@ -2394,6 +2483,7 @@ a:hover {
 .project-card__title {
   font-size: 1.1rem;
   font-weight: 700;
+  color: #363636;
 }
 
 .project-card__description {
@@ -2475,5 +2565,80 @@ a:hover {
 .chip:hover, .chip:focus {
   background: rgba(72, 19, 252, 0.3);
   outline: none;
+}
+
+.project-full {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 20;
+}
+
+.project-full__backdrop {
+  cursor: pointer;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  opacity: 0;
+}
+
+.project-full__wrapper {
+  position: fixed;
+  bottom: 0;
+  overflow: auto;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  margin-left: auto;
+  background: white;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  opacity: 0;
+}
+
+.project-full__content {
+  position: relative;
+  min-height: 100%;
+  opacity: 0;
+}
+
+.project-full__actions {
+  position: fixed;
+  top: 16px;
+  right: 28px;
+}
+
+@media only screen and (max-width: 620px) {
+  .project-full__actions {
+    top: unset;
+    bottom: 10px;
+    right: 20px;
+    z-index: 40;
+  }
+}
+
+.project-full__actions button {
+  border: none;
+  border-radius: 120px;
+  padding: 0.4rem 1rem;
+  font-size: 0.88rem;
+}
+
+.project-full__actions button:focus {
+  outline: none;
+}
+
+.project-full__close {
+  background: #000;
+  color: #fff;
+}
+
+.project-full__expand {
+  background: #365cf3;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

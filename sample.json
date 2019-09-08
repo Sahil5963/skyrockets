@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "thumbnail": "./image/personal-blog-website/personal-blog-website__thumb.jpg",
+    "name": "personal-blog-website",
+    "title": "Faisal Alhabri - Personal Blog Website",
+    "description": "This is a simple and clean Personal Blog website , cleint wanted me to build a platform where he can share his researchs and also personal blogs.",
+    "projectLead": "Sahil Kumar",
+    "status": "Completed",
+    "startDate": "12, July 2019",
+    "technologies": [
+      "Bootstarp",
+      "HTML",
+      "CSS",
+      "JS",
+      "UI / UX Design",
+      "Adobe XD",
+      "Adobe Photoshop"
+    ],
+    "features": null,
+    "githubLink": null,
+    "screens": [
+      "./image/personal-blog-website/personal-blog-website__1.jpg",
+      "./image/personal-blog-website/personal-blog-website__2.jpg",
+      "./image/personal-blog-website/personal-blog-website__3.jpg",
+      "./image/personal-blog-website/personal-blog-website__4.jpg"
+    ],
+    "half": true,
+    "projectMembers": null
+  },
+  {
+    "id": "2",
+    "thumbnail": "./image/comparito/comparito__thumb.jpg",
+    "name": "comparito",
+    "title": "Comparito - Ecomerce Appliaction",
+    "description": "Comparito is an ecomerce like platform , as its name indicates it compares online products prices and their features",
+    "projectLead": "Sahil Kumar",
+    "status": "Completed",
+    "startDate": "12, July 2019",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS",
+      "UI / UX Design",
+      "Adobe XD",
+      "Adobe Photoshop"
+    ],
+    "features": [
+      "Comapre millions of products from single platform",
+      "Get products recommendations ",
+      "To build trust assured products are also there"
+    ],
+    "githubLink": null,
+    "screens": [
+      "./image/comparito/comparito__1.jpg",
+      "./image/comparito/comparito__2.jpg",
+      "./image/comparito/comparito__3.jpg",
+      "./image/comparito/comparito__4.jpg",
+      "./image/comparito/comparito__5.jpg",
+      "./image/comparito/comparito__6.jpg"
+    ],
+    "half": false,
+    "projectMembers": [
+      {
+        "image": "./image/contributor-sahil.jpg",
+        "name": "Sahil Kumar",
+        "role": "Front End Developer , UI/UX Designer",
+        "link": "./sahil.html"
+      },
+      {
+        "image": "./image/contributor-rohit.jpg",
+        "name": "Rohit Joshi1",
+        "role": "Software Developer, Product Manager",
+        "link": "./rohit.html"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "thumbnail": "./image/project-image1.jpg",
+    "name": "demo1",
+    "title": "Graph QL is Awesome",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse consequatur doloribus repudiandae porro, explicabo accusamus ullam vero accusantium. Voluptate pariatur perferendis porro fugit quo libero nostrum veritatis dolor aut sunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit cum magni error dolorem perferendis ad inventore, odit dolore ullam velit facere nobis harum consectetur dolor delectus numquam, quod nemo corrupti? Reiciendis aliquid minus, eius earum hic eos quo provident nemo.",
+    "projectLead": "Rohit Joshi",
+    "status": "Running",
+    "startDate": "12, July 2018",
+    "technologies": ["React", "Node Js", "Graph QL", "Native Script"],
+    "features": [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse consequatur doloribus repudiandae porro, explicabo accusamus1",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa2",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse3"
+    ],
+    "githubLink": "https://github.com/",
+
+    "screens": [
+      "./image/screen1.png",
+      "./image/screen2.png",
+      "./image/screen3.jpg"
+    ],
+    "projectMembers": [
+      {
+        "image": "./image/contributor1.jpg",
+        "name": "Rohit Joshi",
+        "role": "Software Developer",
+        "link": "./profile.html"
+      },
+      {
+        "image": "./image/contributor1.jpg",
+        "name": "Rohit Joshi1",
+        "role": "Software Developer",
+        "link": "./profile.html"
+      },
+      {
+        "image": "./image/contributor1.jpg",
+        "name": "Rohit Joshi2",
+        "role": "Software Developer",
+        "link": "./profile.html"
+      }
+    ]
+  }
+]

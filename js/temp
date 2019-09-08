@@ -1,0 +1,190 @@
+ <div class="project-full">
+
+  <div class="project-full__backdrop" v-on:click="goBack()"   id="project-full__backdrop">
+
+  </div>
+
+  <div class="project-full__wrapper">
+
+    <div class="project-full__content">
+
+      <!-- <div class="project-full__close" id="project-full__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74"><defs>
+          </defs><g transform="translate(-1492 -44)"><rect class="a" width="74" height="74" rx="37" transform="translate(1492 44)"/><g transform="translate(6 7)"><line class="b" x2="26.108" y2="26.108" transform="translate(1509.5 62.5)"/><line class="b" x1="26.108" y2="26.108" transform="translate(1509.5 62.5)"/></g></g></svg>
+      </div> -->
+
+      <div class="project-full__actions">
+          <button class="project-full__close" >Close</button>
+          <button class="project-full__expand">Expand Full</button>
+        </div>
+
+
+
+        <div class="project-section">
+            <div class="project-section__header project-section__header--mobile px-2 mt-2">
+              <h2 class="project-section__name">{{project.name}}</h2>
+      
+            </div>
+      
+            <div class="project-section__image">
+              <img v-bind:src="project.thumbnail"  alt="">
+              <div class="project-section__info">
+                  <label>Project Lead : </label> Rohit Joshi<br>
+                <label>Status : </label> Running <br>
+                <label>Start Date: </label> 12, July 2018 <br>
+                </div>
+      
+                
+                
+      
+                <div class="project-section__contribute">
+                  <div>
+                    <label>Source Code Available</label>
+                    <img src="./image/svg/github1.svg" alt="">
+                  </div>
+                  <div>
+                      <label>Appretiate Designs</label>
+                      <img src="./image/svg/dribble1.svg" alt="">
+                    </div>
+                </div>
+      
+            </div>
+            <div class="project-section__content">
+      
+                <div class="project-section__header project-section__header--desk">
+                    <h2 class="project-section__name">{{project.name}}</h2>
+                  </div>
+      
+                  <div class="project-section__overview py-1">
+      
+                    <h5 class="project-section__sub-heading">Description</h5>
+                    <p>{{project.description}}</p>
+      
+                  </div>
+      
+                  <div class="project-section__divider"></div>
+      
+                  
+      
+                  <div class="project-section__technologies-container py-1">
+      
+                      <h5 class="project-section__sub-heading">Technologies Involved</h5>
+                      <div class="project-section__technologies">
+                        <div class="project-section__technology">PHP</div>
+                        <div class="project-section__technology">Laravel</div>
+                        <div class="project-section__technology">HTML</div>
+                        <div class="project-section__technology">Java</div>
+                        <div class="project-section__technology">OOPS</div>
+                        <div class="project-section__technology">C++</div>
+                      </div>
+        
+                    </div>
+                    <div class="project-section__divider"></div>
+      
+                    <div class="project-section__feature py-1">
+      
+                        <h5 class="project-section__sub-heading">Features of the application</h5>
+                        <ul class="project-section__feature__list">
+                          <li class="project-section__feature__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis dicta corrupti ullam neque illum repellendus, quasi fugit quis inventore cupiditate tempora, ut ipsa ratione! Corporis, obcaecati alias facilis odio ratione animi officia, ut fugiat assumenda modi, eum neque consequatur!</li>
+                          <li class="project-section__feature__item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis est vero sit dolor placeat.</li>
+                          <li class="project-section__feature__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ducimus?</li>
+                        </ul>
+          
+                      </div>
+
+                    
+      
+            </div>
+
+            
+
+            <div class="project-section__full-width">
+                <div class="project-section__divider"></div>
+
+              <div class="project-section__screens">
+
+                  <h5 class="project-section__sub-heading project-section__screens__heading">Features of the application</h5>
+                  <div class="project-section__screens__item">
+                      <a :href="project.screen1" target="_blank">
+                        <img  v-bind:src="project.screen1"  alt="" alt="" class="project-section__screen">
+                        </a>
+                  </div>
+                  
+                  <div class="project-section__screens__item">
+                      <a :href="project.screen2" target="_blank">
+                          <img  v-bind:src="project.screen2"  alt="" alt="" class="project-section__screen">
+                          </a>
+              </div>
+
+                <div class="project-section__screens__item">
+                    <a :href="project.screen3" target="_blank">
+                        <img  v-bind:src="project.screen3"  alt="" alt="" class="project-section__screen">
+                        </a>
+              </div>
+
+              </div>
+
+
+                <div class="project-section__divider"></div>
+      
+                <div class="project-section__members py-1 px-4">
+
+                    <h5 class="project-section__sub-heading">Project Members</h5>
+
+                    <div class="project-section__members__avtars">
+                      <div class="project-section__members__avtar">
+                        <div class="project-section__members__avtar__image">
+                            <img src="./image/contributor1.jpg" alt="">
+                        </div>
+                        <div class="project-section__members__avtar__content">
+                          <h4 class="project-section__members__avtar__name">Emma Roberts</h4>
+                          <label for="" class="project-section__members__avtar__role">Front-Ent Developer</label>
+                        </div>
+                        
+                      </div>
+                      <div class="project-section__members__avtar">
+                          <div class="project-section__members__avtar__image">
+                              <img src="./image/contributor1.jpg" alt="">
+                          </div>
+                          <div class="project-section__members__avtar__content">
+                            <h4 class="project-section__members__avtar__name">Emma Roberts</h4>
+                            <label for="" class="project-section__members__avtar__role">Front-Ent Developer</label>
+                          </div>
+                          
+                        </div>
+                        <div class="project-section__members__avtar">
+                            <div class="project-section__members__avtar__image">
+                                <img src="./image/contributor1.jpg" alt="">
+                            </div>
+                            <div class="project-section__members__avtar__content">
+                              <h4 class="project-section__members__avtar__name">Emma Roberts</h4>
+                              <label for="" class="project-section__members__avtar__role">Front-Ent Developer</label>
+                            </div>
+                            
+                          </div>
+                    </div>
+
+
+      
+                  </div>
+
+                  <div class="project-section__appreciate py-4">
+
+                    <button>Appreciate <span>40</span></button>
+
+
+                  </div>
+
+
+            </div>
+      
+      
+      
+          </div>
+      
+    </div>
+    
+  </div>
+
+
+</div>

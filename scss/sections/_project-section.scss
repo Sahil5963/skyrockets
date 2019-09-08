@@ -1,6 +1,6 @@
 .project-section {
   display: grid;
-  margin: 3rem auto;
+  margin: 1rem auto;
   width: 96%;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.8rem;
@@ -29,7 +29,12 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1rem;
+    @media only screen and (max-width: 720px) {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0rem;
+    }
   }
   &__designation {
     margin-bottom: 1rem;
@@ -48,7 +53,7 @@
   }
 
   &__image {
-    grid-column: 1/4;
+    grid-column: 1/5;
     @media only screen and (max-width: 740px) {
       grid-column: 1/-1;
     }
@@ -61,12 +66,60 @@
   }
 
   &__content {
-    grid-column: 4/-1;
+    grid-column: 5/-1;
     @media only screen and (max-width: 740px) {
       grid-column: 1/-1;
     }
     box-shadow: 1px 2px 14px rgba(#000, 0.16);
     padding: 2rem 2rem;
+  }
+
+  &__full-width {
+    grid-column: 1/-1;
+  }
+
+  &__screens {
+    width: 100%;
+
+    &__heading {
+      margin-bottom: 2rem;
+    }
+
+    &__item {
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+
+      &__label {
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0.6rem;
+        color: rgb(110, 110, 110);
+        margin: 0;
+      }
+    }
+    &__items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.8rem;
+    }
+
+    &__items--half {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.8rem;
+      @media only screen and (max-width: 920px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    img {
+      width: 100%;
+      cursor: zoom-in;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   p {
@@ -207,7 +260,7 @@
     padding: 1.4rem 0.6rem;
     justify-content: space-around;
 
-    div {
+    a {
       display: flex;
       flex-direction: column;
 

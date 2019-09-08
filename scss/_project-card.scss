@@ -3,17 +3,32 @@
   flex-direction: column;
   border-radius: 6px;
   position: relative;
-
+  height: 100%;
   overflow: hidden;
   box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.16);
   transition: all 0.2s;
   &:hover {
     box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+  }
+
+  &:hover &__image:before {
+    background: transparent;
   }
 
   &__image {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: rgba(#000, 0.3);
+      height: 100%;
+      transition: all 0.2s;
+      width: 100%;
+    }
+
     img {
-      object-fit: cover;
       width: 100%;
     }
   }
@@ -42,6 +57,7 @@
   &__title {
     font-size: 1.1rem;
     font-weight: 700;
+    color: rgb(54, 54, 54);
   }
 
   &__description {

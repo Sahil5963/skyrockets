@@ -28,7 +28,14 @@
     <title>Index</title>
   </head>
   <body>
-      <nav class="navbar navbar--desktop navbar--transparent">
+
+    <div id="projects-collection">
+        
+    
+      
+
+
+      <nav class="navbar navbar--desktop navbar--white">
           <div class="navbar__logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.211 49.342">
               <g transform="translate(-72 -27.028)">
@@ -121,22 +128,22 @@
     <div class="profile-section">
 
       <div class="profile-section__header profile-section__header--mobile">
-        <h2 class="profile-section__name">Meet <span class="bold">Mr. Rohit Joshi</span> </h2>
-        <div class="profile-section__designation">Software Developer, Product Manager</div>
+        <h2 class="profile-section__name"><span class="bold">Sahil Kumar</span> </h2>
+        <div class="profile-section__designation">Front End Developer , UI/UX Designer</div>
 
       </div>
 
       <div class="profile-section__image">
-        <img src="./image/member-profle1.jpg" alt="">
+        <img src="./image/profile-sahil.jpg" alt="">
 
         <div class="profile-section__social">
-            <img src="./image/svg/github.svg" alt="" />
-            <img src="./image/svg/dribbble.svg" alt="" />
-            <img src="./image/svg/linkedin.svg" alt="" />
+          <a href="https://github.com/Sahil5963"><img src="./image/svg/github.svg" alt="" /></a>
+          <a href="https://dribbble.com/Simon_S"><img src="./image/svg/dribbble.svg" alt="" /></a>
+          <a href="https://www.linkedin.com/in/sahil5963/"><img src="./image/svg/linkedin.svg" alt="" /></a>
           </div>
         <div class="profile-section__contact">
-            <label>Full Name : </label> Rohit Joshi<br>
-          <label>Email : </label> sk950121@gmail.com <br>
+            <label>Full Name : </label> Sahil Kumar<br>
+          <label>Email : </label> <a href="mailto:sk950121@gmail.com?Subject=Hello%20again" target="_top">sk950121@gmail.com</a> <br>
           <label>Mobile : </label> 9501210908 <br>
           
           </div>
@@ -145,15 +152,21 @@
       <div class="profile-section__content">
 
           <div class="profile-section__header profile-section__header--desk">
-              <h2 class="profile-section__name">Meet <span class="bold">Mr. Rohit Joshi</span> </h2>
-              <div class="profile-section__designation">Software Developer, Product Manager</div>
+              <h2 class="profile-section__name"><span class="bold">Sahil Kumar</span> </h2>
+              <div class="profile-section__designation">Front End Developer , UI/UX Designer</div>
       
             </div>
 
             <div class="profile-section__overview py-4">
 
               <h5 class="profile-section__sub-heading">Overview</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse consequatur doloribus repudiandae porro, explicabo accusamus ullam vero accusantium. Voluptate pariatur perferendis porro fugit quo libero nostrum veritatis dolor aut sunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit cum magni error dolorem perferendis ad inventore, odit dolore ullam velit facere nobis harum consectetur dolor delectus numquam, quod nemo corrupti? Reiciendis aliquid minus, eius earum hic eos quo provident nemo.</p>
+              <p>
+                I started my career in Design when i was 16, indulging into the self made projects.
+                Based on my experiences in programming websites, I have been interning with company which gave me an amazing opportunity to get good work experience and i got an idea of Work life in a IT company.
+                With 4 years of experience I have some successfully running live project.
+              </p>
+              <p>
+                In Web Design I satiate my desire to visually design something while stretching my Programming wings at the same time. I like to work with the WordPress, and other front-end design frameworks focusing on creating websites that result in a pleasing browsing experience for the user - making sure that the website is viewable on whatever sized screen, bug-free, fast, and beautiful.</p>
 
             </div>
 
@@ -161,12 +174,19 @@
 
                 <h5 class="profile-section__sub-heading">Skills</h5>
                 <div class="chips profile-section__skills">
-                  <div class="chip profile-section__skill">PHP</div>
-                  <div class="chip profile-section__skill">Laravel</div>
+                  <div class="chip profile-section__skill">Web Design</div>
                   <div class="chip profile-section__skill">HTML</div>
-                  <div class="chip profile-section__skill">Java</div>
-                  <div class="chip profile-section__skill">OOPS</div>
-                  <div class="chip profile-section__skill">C++</div>
+                  <div class="chip profile-section__skill">CSS</div>
+                  <div class="chip profile-section__skill">JavaScript</div>
+                  <div class="chip profile-section__skill">Web Animations</div>
+                  <div class="chip profile-section__skill">Logo Design</div>
+                  <div class="chip profile-section__skill">Front End Development</div>
+                  <div class="chip profile-section__skill">Web Applications</div>
+                  <div class="chip profile-section__skill">Vue</div>
+                  <div class="chip profile-section__skill">Progressive Web Apps (PWA)</div>
+                  <div class="chip profile-section__skill">React</div>
+                  
+                  
                 </div>
   
               </div>
@@ -178,6 +198,10 @@
 
 
     </div>
+
+
+    
+
 
     <div class="work-collection-section">
 
@@ -193,72 +217,80 @@
             <div class="work-collection__items">
 
               <div class="work-collection__item">
-              <div class="project-card">
+                  <router-link to="/project/personal-blog-website">
+              <div class="project-card demo1">
                 <div class="project-card__image">
-                  <img src="./image/project-image1.jpg" alt="">
+                  <img src="./image/personal-blog-website/personal-blog-website__thumb.jpg" alt="">
                 </div>
                 <div class="project-card__content">
-                  <h4 class="project-card__title">The main title</h4>
+                  <h4 class="project-card__title">Personal Blog Website - Multilingual</h4>
                   <div class="project-card__description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                       laboriosam nihil sint minima</p>
+                    <p>This is a simple and clean Personal Blog website , cleint wanted me to build a platform where he can share his researchs and also personal blogs.</p>
                   </div>
 
-                  <div class="project-card__contributors">
-                    <h6 class="project-card__contributors__heading">Contributors</h6>
-                    <div class="project-card__contributors__avtars">
-                    <div class="project-card__contributor">
-                      <img src="./image/contributor1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Linda" alt="">
-                    </div>
-                    <div class="project-card__contributor">
-                        <img src="./image/contributor1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Andrew" alt="">
-                      </div>
-                      <div class="project-card__contributor">
-                          <img src="./image/contributor1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Maximus" alt="">
-                        </div>
-                        <div class="project-card__contributor">
-                           <a href="#"> 5 more</a>
-                          </div>
-                      </div>
-                  </div>
+                 
 
                   <div class="project-card__technologies chips">
-                    <button class="project-card__technology chip">PHP</button>
-                    <button class="project-card__technology chip">WebCTR</button>
-                    <button class="project-card__technology chip">JS</button>
+                    <button class="project-card__technology chip">UI / UX Design</button>
+                    <button class="project-card__technology chip">Adobe XD</button>
+                    <button class="project-card__technology chip">Bootstarp</button>
+                    <button class="project-card__technology chip">HTML</button>
+                    <button class="project-card__technology chip">CSS</button>
+                    <button class="project-card__technology chip">JavaScript</button>
                   </div>
 
                   <div class="project-card__status project-card__status--completed">Completed</div>
 
                 </div>
+
+
+
               </div>  
+
+            </router-link>
+
               </div>
               <div class="work-collection__item">
-                
-                  <div class="project-card">
-                      <a href="#">
+                <router-link to="/project/comparito">
+                  <div class="project-card demo1">
+   
                       <div class="project-card__image">
-                        <img src="./image/project-image2.jpg" alt="">
+                        <img src="./image/comparito/comparito__thumb.jpg" alt="">
                       </div>
                       <div class="project-card__content">
-                        <h4 class="project-card__title">The main title</h4>
+                        <h4 class="project-card__title">Comparito - Web Application</h4>
                         <div class="project-card__description">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                             laboriosam nihil sint minima</p>
+                          <p>Comparito is an ecomerce like platform , as its name indicates it compares online products prices and their features</p>
                         </div>
       
                         <div class="project-card__technologies chips">
-                          <button class="project-card__technology chip">PHP</button>
-                          <button class="project-card__technology chip">WebCTR</button>
-                          <button class="project-card__technology chip">JS</button>
+                          <button class="project-card__technology chip">Adobe XD</button>
+                          <button class="project-card__technology chip">Web Application</button>
+                          <button class="project-card__technology chip">UI / UX</button>
+                          <button class="project-card__technology chip">HTML/CSS/JS</button>
                         </div>
+
+                        <div class="project-card__contributors">
+                            <h6 class="project-card__contributors__heading">Contributors</h6>
+                            <div class="project-card__contributors__avtars">
+                            <div class="project-card__contributor">
+                              <img src="./image/contributor-sahil.jpg"  data-toggle="tooltip" data-placement="bottom" title="Sahil" alt="">
+                            </div>
+                            <div class="project-card__contributor">
+                                <img src="./image/contributor-rohit.jpg"  data-toggle="tooltip" data-placement="bottom" title="Rohit" alt="">
+                              </div>
+                              </div>
+                          </div>
       
-                        <div class="project-card__status project-card__status--running">Running</div>
+                        <div class="project-card__status project-card__status--completed">Completed</div>
 
                       </div>
-                    </a>
+       
+
+
+
                     </div>  
-                  
+                  </router-link>
               </div>
 
               <div class="work-collection__item">
@@ -380,7 +412,7 @@
                       <div class="work-collection__item">
                           <div class="project-card">
                             <div class="project-card__image">
-                              <img src="./image/project-image7.jpg" alt="">
+                              <img src="./image/comparito/comparito__thumb.jpg" alt="">
                             </div>
                             <div class="project-card__content">
                               <h4 class="project-card__title">The main title</h4>
@@ -435,7 +467,14 @@
 
     </div>
 
+    <router-view>
+        <project-full>
+          </project-full>
 
+    </router-view>
+
+
+  </div>
 
 
 
@@ -511,6 +550,14 @@
       </div>
     </footer>
 
+
+    
+ 
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -533,8 +580,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ModifiersPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./js/vuejs.js"></script>
+    <script src="./js/vue-router.js"></script>
+
 
     <script src="./js/main.js"></script>
+
+
+
 
     <!-- <script>
       var logo = document.querySelector(".cloud1");
