@@ -76,45 +76,102 @@
     ]
   },
   {
-    "id": "1",
-    "thumbnail": "./image/project-image1.jpg",
-    "name": "demo1",
-    "title": "Graph QL is Awesome",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse consequatur doloribus repudiandae porro, explicabo accusamus ullam vero accusantium. Voluptate pariatur perferendis porro fugit quo libero nostrum veritatis dolor aut sunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit cum magni error dolorem perferendis ad inventore, odit dolore ullam velit facere nobis harum consectetur dolor delectus numquam, quod nemo corrupti? Reiciendis aliquid minus, eius earum hic eos quo provident nemo.",
-    "projectLead": "Rohit Joshi",
-    "status": "Running",
-    "startDate": "12, July 2018",
-    "technologies": ["React", "Node Js", "Graph QL", "Native Script"],
+    "id": "3",
+    "thumbnail": "./image/magic-visit/magic-visit__thumb.jpg",
+    "name": "magic-visit",
+    "title": "Magic Visit",
+    "description": "Magic Visit is unique platform where admin user can handle websites which his viewers are visiting",
+    "projectLead": "Rohit Joshi & Sahil Kumar",
+    "status": "Completed",
+    "startDate": "09, November 2019",
+    "technologies": [
+      "React",
+      "Web Sockets",
+      "UI / UX Design",
+      "Web Application",
+      "Node"
+    ],
     "features": [
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse consequatur doloribus repudiandae porro, explicabo accusamus1",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa2",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident illo quasi incidunt nobis nostrum culpa harum dolores esse3"
+      "Handle real time website",
+      "Mange list of websites which users are visiting "
     ],
-    "githubLink": "https://github.com/",
-
+    "githubLink": null,
     "screens": [
-      "./image/screen1.png",
-      "./image/screen2.png",
-      "./image/screen3.jpg"
+      "./image/magic-visit/magic-visit__1.jpg",
+      "./image/magic-visit/magic-visit__2.jpg",
+      "./image/magic-visit/magic-visit__3.jpg",
+      "./image/magic-visit/magic-visit__4.jpg"
     ],
+    "half": false,
     "projectMembers": [
       {
-        "image": "./image/contributor1.jpg",
-        "name": "Rohit Joshi",
-        "role": "Software Developer",
-        "link": "./profile.html"
+        "image": "./image/contributor-sahil.jpg",
+        "name": "Sahil Kumar",
+        "role": "Front End Developer , UI/UX Designer",
+        "link": "./sahil.html"
       },
       {
-        "image": "./image/contributor1.jpg",
+        "image": "./image/contributor-rohit.jpg",
         "name": "Rohit Joshi1",
-        "role": "Software Developer",
-        "link": "./profile.html"
-      },
+        "role": "Software Developer, Product Manager",
+        "link": "./rohit.html"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "thumbnail": "./image/jobsgate/jobsgate__thumb.jpg",
+    "name": "jobsgate",
+    "title": "JoobsGate - Africa’s Leading Talent Acquisition & People management platform",
+    "description": "JobsGate is a pan African Recruitment and Consulting firm established to render cutting edge services to business firms of allsizes and in all sectors.",
+    "projectLead": "Sahil Kumar",
+    "status": "Completed",
+    "startDate": "04, July 2019",
+    "technologies": [
+      "Mockup Design",
+      "Website Design",
+      "Website Planning",
+      "UI / UX Design",
+      "HTML , CSS , JS",
+      "Bootstrap 4"
+    ],
+    "features": null,
+    "githubLink": null,
+    "screens": ["./image/jobsgate/jobsgate__1.jpg"],
+    "half": false,
+    "projectMembers": [
       {
-        "image": "./image/contributor1.jpg",
-        "name": "Rohit Joshi2",
-        "role": "Software Developer",
-        "link": "./profile.html"
+        "image": "./image/contributor-sahil.jpg",
+        "name": "Sahil Kumar",
+        "role": "Front End Developer , UI/UX Designer",
+        "link": "./sahil.html"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "thumbnail": "./image/james-ryan/james-ryan__thumb.jpg",
+    "name": "james-ryan",
+    "title": "James Ryan - Portfolio Website Design",
+    "description": "Its a Portfolio design of a fictional character James Ryan showcasing his work and life's story ",
+    "projectLead": "Sahil Kumar",
+    "status": "Completed",
+    "startDate": "12, August 2019",
+    "technologies": ["Mockup Design", "Website Design", "UI / UX Design"],
+    "features": null,
+    "githubLink": null,
+    "screens": [
+      "./image/james-ryan/james-ryan__1.jpg",
+      "./image/james-ryan/james-ryan__2.jpg",
+      "./image/james-ryan/james-ryan__3.jpg"
+    ],
+    "half": false,
+    "projectMembers": [
+      {
+        "image": "./image/contributor-sahil.jpg",
+        "name": "Sahil Kumar",
+        "role": "Front End Developer , UI/UX Designer",
+        "link": "./sahil.html"
       }
     ]
   }

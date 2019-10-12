@@ -1,19 +1,28 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  border-radius: 6px;
+  border-radius: 0px;
   position: relative;
   height: 100%;
   overflow: hidden;
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.08);
   transition: all 0.2s;
   &:hover {
-    box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.26);
-    cursor: pointer;
+    box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.2);
+
+    .project-card__status {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    .project-card__open-site {
+      opacity: 1;
+    }
   }
 
-  &:hover &__image:before {
-    background: transparent;
+  &__image:hover {
+    &:before {
+      background: rgba(#000, 0.4);
+    }
   }
 
   &__image {
@@ -22,22 +31,46 @@
     &::before {
       content: "";
       position: absolute;
-      background: rgba(#000, 0.3);
+      background: rgba(#000, 0);
       height: 100%;
       transition: all 0.2s;
       width: 100%;
     }
 
     img {
+      transition: all 0.2s;
       width: 100%;
     }
   }
 
+  &__open-site {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    border: 1px solid rgba(#fff, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s;
+
+    svg {
+      fill: #fff;
+      height: 14px;
+    }
+  }
+
   &__content {
-    padding: 1rem 1rem;
+    position: relative;
+    padding: 1rem 1.4rem;
   }
 
   &__status {
+    opacity: 0;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -46,6 +79,8 @@
     font-size: 0.7rem;
     font-weight: 600;
     border-radius: 120px;
+    transition: all 0.2s;
+    transform: translateY(-4px);
     &--running {
       color: #1355fc;
     }
@@ -55,24 +90,45 @@
   }
 
   &__title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: rgb(54, 54, 54);
+    color: #141414;
+    margin-bottom: 0.6rem;
+  }
+  &__date {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(116, 116, 116);
   }
 
   &__description {
-    margin: 1rem 0rem;
+    margin: 0.4rem 0rem;
+
     p {
+      color: #3a3a3a;
       font-size: 0.8rem;
       line-height: 1.4;
+      font-weight: 400;
+    }
+    a {
+      font-size: 0.8rem;
+      color: #1355fc;
+      font-weight: 600;
     }
   }
 
   &__contributors {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
     h6 {
       font-size: 0.8rem;
       font-weight: 700;
+      margin-bottom: 0;
+      margin-left: 0.6rem;
+      color: rgb(122, 122, 122);
     }
     &__avtars {
       display: flex;
@@ -82,8 +138,8 @@
   &__contributor {
     border-radius: 50%;
     overflow: hidden;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background: white;
     display: grid;
     justify-items: center;
@@ -94,8 +150,12 @@
       margin-right: 0.2rem;
     }
     img {
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
     }
+  }
+
+  &__technologies {
+    margin-bottom: 1.4rem;
   }
 }

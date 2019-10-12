@@ -21,6 +21,8 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./scss/style.css" />
@@ -137,9 +139,9 @@
         <img src="./image/profile-sahil.jpg" alt="">
 
         <div class="profile-section__social">
-          <a href="https://github.com/Sahil5963"><img src="./image/svg/github.svg" alt="" /></a>
-          <a href="https://dribbble.com/Simon_S"><img src="./image/svg/dribbble.svg" alt="" /></a>
-          <a href="https://www.linkedin.com/in/sahil5963/"><img src="./image/svg/linkedin.svg" alt="" /></a>
+          <a href="https://github.com/Sahil5963" target="_blank"><img src="./image/svg/github.svg" alt="" /></a>
+          <a href="https://dribbble.com/Simon_S" target="_blank"><img src="./image/svg/dribbble.svg" alt="" /></a>
+          <a href="https://www.linkedin.com/in/sahil5963/" target="_blank"><img src="./image/svg/linkedin.svg" alt="" /></a>
           </div>
         <div class="profile-section__contact">
             <label>Full Name : </label> Sahil Kumar<br>
@@ -217,15 +219,29 @@
             <div class="work-collection__items">
 
               <div class="work-collection__item">
-                  <router-link to="/project/personal-blog-website">
+                  
               <div class="project-card demo1">
+                <router-link  :to="{ path: './project/personal-blog-website'}">
                 <div class="project-card__image">
                   <img src="./image/personal-blog-website/personal-blog-website__thumb.jpg" alt="">
+
+                 
+<div class="project-card__status project-card__status--completed">Completed</div>
                 </div>
+                </router-link>
+                
                 <div class="project-card__content">
+                  <a href="" class="project-card__open-site" data-toggle="tooltip" data-placement="top" title="Visit Site">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15">
+                      <defs>
+                      </defs>
+                      <path class="a" d="M325,206l-7-7v4c-7,1-10,6-11,11,2.5-3.5,6-5.1,11-5.1V213Z" transform="translate(-307 -199)" />
+                    </svg>
+                  </a>
                   <h4 class="project-card__title">Personal Blog Website - Multilingual</h4>
+                  <span class="project-card__date">12, July 2018</span>
                   <div class="project-card__description">
-                    <p>This is a simple and clean Personal Blog website , cleint wanted me to build a platform where he can share his researchs and also personal blogs.</p>
+                    <!-- <p>This is a simple and clean Personal Blog website , client wanted me to build a platform where he can share his researchs and also personal blogs.</p> -->
                   </div>
 
                  
@@ -239,7 +255,7 @@
                     <button class="project-card__technology chip">JavaScript</button>
                   </div>
 
-                  <div class="project-card__status project-card__status--completed">Completed</div>
+                 
 
                 </div>
 
@@ -247,42 +263,54 @@
 
               </div>  
 
-            </router-link>
+            
 
               </div>
               <div class="work-collection__item">
-                <router-link to="/project/comparito">
+                
                   <div class="project-card demo1">
-   
+                      <router-link to="/project/comparito">
                       <div class="project-card__image">
                         <img src="./image/comparito/comparito__thumb.jpg" alt="">
+                        <div class="project-card__status project-card__status--completed">Completed</div>
                       </div>
+                      </router-link>
                       <div class="project-card__content">
                         <h4 class="project-card__title">Comparito - Web Application</h4>
+                        <span class="project-card__date">12, July 2018</span>
                         <div class="project-card__description">
-                          <p>Comparito is an ecomerce like platform , as its name indicates it compares online products prices and their features</p>
+                          <!-- <p>Comparito is an ecomerce like platform , as its name indicates it compares online products prices and their features</p> -->
                         </div>
       
+                        <div class="project-card__footer">
                         <div class="project-card__technologies chips">
                           <button class="project-card__technology chip">Adobe XD</button>
                           <button class="project-card__technology chip">Web Application</button>
                           <button class="project-card__technology chip">UI / UX</button>
                           <button class="project-card__technology chip">HTML/CSS/JS</button>
                         </div>
-
+                        
                         <div class="project-card__contributors">
-                            <h6 class="project-card__contributors__heading">Contributors</h6>
-                            <div class="project-card__contributors__avtars">
+                          
+                          <div class="project-card__contributors__avtars">
                             <div class="project-card__contributor">
-                              <img src="./image/contributor-sahil.jpg"  data-toggle="tooltip" data-placement="bottom" title="Sahil" alt="">
+                             <a href="./sahil.html"> <img src="./image/contributor-sahil.jpg" data-toggle="tooltip" data-placement="bottom" title="Sahil" alt=""></a>
                             </div>
                             <div class="project-card__contributor">
-                                <img src="./image/contributor-rohit.jpg"  data-toggle="tooltip" data-placement="bottom" title="Rohit" alt="">
-                              </div>
-                              </div>
+                              <a href="./rohit.html">
+                              <img src="./image/contributor-rohit.jpg" data-toggle="tooltip" data-placement="bottom" title="Rohit" alt="">
+                              </a>
+                            </div>
                           </div>
+                          <h6 class="project-card__contributors__heading">Contributors</h6>
+                        </div>
+
+                        
+                        </div>
+
+
       
-                        <div class="project-card__status project-card__status--completed">Completed</div>
+                       
 
                       </div>
        
@@ -290,174 +318,238 @@
 
 
                     </div>  
-                  </router-link>
+                  
               </div>
 
               <div class="work-collection__item">
-                  <div class="project-card">
+              
+                <div class="project-card demo1">
+                  <router-link to="/project/magic-visit">
                     <div class="project-card__image">
-                      <img src="./image/project-image3.jpg" alt="">
+                      <img src="./image/magic-visit/magic-visit__thumb.jpg" alt="">
+                      <div class="project-card__status project-card__status--completed">Completed</div>
                     </div>
-                    <div class="project-card__content">
-                      <h4 class="project-card__title">The main title</h4>
-                      <div class="project-card__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                           laboriosam nihil sint minima</p>
+                  </router-link>
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Magic Visit - Web application for managing live websites</h4>
+                    <span class="project-card__date">09, November 2019</span>
+                    <div class="project-card__description">
+                      <!-- <p>Magic Visit is unique platform where admin user can handle websites which his viewers are visiting</p> -->
+                      <!-- <a href="" class="project-card__link">Visit Site</a> -->
+                    </div>
+              
+                    <div class="project-card__footer">
+                      <div class="project-card__technologies chips">
+                        <button class="project-card__technology chip">React</button>
+                        <button class="project-card__technology chip">Web Application</button>
+                        <button class="project-card__technology chip">UI / UX</button>
+                        <button class="project-card__technology chip">Node</button>
+                        <button class="project-card__technology chip">Web Sockets</button>
                       </div>
-    
+              
                       <div class="project-card__contributors">
-                        <h6 class="project-card__contributors__heading">Contributors</h6>
+                        
                         <div class="project-card__contributors__avtars">
-                        <div class="project-card__contributor">
-                          <img src="./image/contributor1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Linda" alt="">
-                        </div>
-                        <div class="project-card__contributor">
-                            <img src="./image/contributor1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Andrew" alt="">
+                          <div class="project-card__contributor">
+                            <a href="./sahil.html"> <img src="./image/contributor-sahil.jpg" data-toggle="tooltip" data-placement="bottom"
+                                title="Sahil" alt=""></a>
                           </div>
                           <div class="project-card__contributor">
-                              <img src="./image/contributor1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Maximus" alt="">
-                            </div>
-                            <div class="project-card__contributor">
-                               <a href="#"> 5 more</a>
-                              </div>
+                            <a href="./rohit.html">
+                              <img src="./image/contributor-rohit.jpg" data-toggle="tooltip" data-placement="bottom" title="Rohit" alt="">
+                            </a>
                           </div>
+                        </div>
+                        <h6 class="project-card__contributors__heading">Contributors</h6>
                       </div>
-    
-                      <div class="project-card__technologies chips">
-                        <button class="project-card__technology chip">PHP</button>
-                        <button class="project-card__technology chip">WebCTR</button>
-                        <button class="project-card__technology chip">JS</button>
-                      </div>
-    
-                      <div class="project-card__status project-card__status--completed">Completed</div>
-    
+              
+              
                     </div>
-                  </div>  
-                  </div>
-                  <div class="work-collection__item">
-                      <div class="project-card">
-                          <div class="project-card__image">
-                            <img src="./image/project-image4.jpg" alt="">
-                          </div>
-                          <div class="project-card__content">
-                            <h4 class="project-card__title">The main title</h4>
-                            <div class="project-card__description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                                 laboriosam nihil sint minima</p>
-                            </div>
-          
-                            <div class="project-card__technologies chips">
-                              <button class="project-card__technology chip">PHP</button>
-                              <button class="project-card__technology chip">WebCTR</button>
-                              <button class="project-card__technology chip">JS</button>
-                            </div>
-          
-                            <div class="project-card__status project-card__status--running">Running</div>
-    
-                          </div>
-                        </div>  
-                  </div>
-
-                  
-                  <div class="work-collection__item">
-                      <div class="project-card">
-                        <div class="project-card__image">
-                          <img src="./image/project-image5.jpg" alt="">
-                        </div>
-                        <div class="project-card__content">
-                          <h4 class="project-card__title">The main title</h4>
-                          <div class="project-card__description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                               laboriosam nihil sint minima</p>
-                          </div>
-        
-
-        
-                          <div class="project-card__technologies chips">
-                            <button class="project-card__technology chip">PHP</button>
-                            <button class="project-card__technology chip">WebCTR</button>
-                            <button class="project-card__technology chip">JS</button>
-                          </div>
-        
-                          <div class="project-card__status project-card__status--completed">Completed</div>
-        
-                        </div>
-                      </div>  
-                      </div>
-                      <div class="work-collection__item">
-                          <div class="project-card">
-                              <div class="project-card__image">
-                                <img src="./image/project-image6.jpg" alt="">
-                              </div>
-                              <div class="project-card__content">
-                                <h4 class="project-card__title">The main title</h4>
-                                <div class="project-card__description">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                                     laboriosam nihil sint minima</p>
-                                </div>
               
-                                <div class="project-card__technologies chips">
-                                  <button class="project-card__technology chip">PHP</button>
-                                  <button class="project-card__technology chip">WebCTR</button>
-                                  <button class="project-card__technology chip">JS</button>
-                                </div>
               
-                                <div class="project-card__status project-card__status--running">Running</div>
-        
-                              </div>
-                            </div>  
+              
+                   
+              
+                  </div>
+              
+              
+              
+              
+                </div>
+              
+              </div>
+
+              <div class="work-collection__item">
+              
+                <div class="project-card demo1">
+                  <router-link to="/project/jobsgate">
+                    <div class="project-card__image">
+                      <img src="./image/jobsgate/jobsgate__thumb.jpg" alt="">
+                      <div class="project-card__status project-card__status--completed">Completed</div>
+                    </div>
+                  </router-link>
+                  <div class="project-card__content">
+                    <a href="https://thejobsgate.com/" target="_blank" class="project-card__open-site" data-toggle="tooltip" data-placement="top" title="Visit Site">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15">
+                        <defs>
+                        </defs>
+                        <path class="a" d="M325,206l-7-7v4c-7,1-10,6-11,11,2.5-3.5,6-5.1,11-5.1V213Z" transform="translate(-307 -199)" />
+                      </svg>
+                    </a>
+                    <h4 class="project-card__title">JobsGate - Website Design</h4>
+                    <span class="project-card__date">09, July 2019</span>
+                    <div class="project-card__description">
+                      <!-- <p>Magic Visit is unique platform where admin user can handle websites which his viewers are visiting</p> -->
+                      <!-- <a href="" class="project-card__link">Visit Site</a> -->
+                    </div>
+              
+                    <div class="project-card__footer">
+                      <div class="project-card__technologies chips">
+                        <button class="project-card__technology chip">Mockup Design</button>
+                        <button class="project-card__technology chip">Website Planning</button>
+                        <button class="project-card__technology chip">UI / UX</button>
+                        <button class="project-card__technology chip">HTML , CSS , JS</button>
+                        <button class="project-card__technology chip">Bootstrap 4</button>
                       </div>
-
-                      
-                      <div class="work-collection__item">
-                          <div class="project-card">
-                            <div class="project-card__image">
-                              <img src="./image/comparito/comparito__thumb.jpg" alt="">
-                            </div>
-                            <div class="project-card__content">
-                              <h4 class="project-card__title">The main title</h4>
-                              <div class="project-card__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                                   laboriosam nihil sint minima</p>
-                              </div>
-            
-
-            
-                              <div class="project-card__technologies chips">
-                                <button class="project-card__technology chip">PHP</button>
-                                <button class="project-card__technology chip">WebCTR</button>
-                                <button class="project-card__technology chip">JS</button>
-                              </div>
-            
-                              <div class="project-card__status project-card__status--completed">Completed</div>
-            
-                            </div>
-                          </div>  
+              
+                      <div class="project-card__contributors">
+              
+                        <div class="project-card__contributors__avtars">
+                          <div class="project-card__contributor">
+                            <a href="./sahil.html"> <img src="./image/contributor-sahil.jpg" data-toggle="tooltip"
+                                data-placement="bottom" title="Sahil" alt=""></a>
                           </div>
-                          <div class="work-collection__item">
-                              <div class="project-card">
-                                  <div class="project-card__image">
-                                    <img src="./image/project-image8.jpg" alt="">
-                                  </div>
-                                  <div class="project-card__content">
-                                    <h4 class="project-card__title">The main title</h4>
-                                    <div class="project-card__description">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur beatae doloribus, cumque iste
-                                         laboriosam nihil sint minima</p>
-                                    </div>
-                  
-                                    <div class="project-card__technologies chips">
-                                      <button class="project-card__technology chip">PHP</button>
-                                      <button class="project-card__technology chip">WebCTR</button>
-                                      <button class="project-card__technology chip">JS</button>
-                                    </div>
-                  
-                                    <div class="project-card__status project-card__status--running">Running</div>
-            
-                                  </div>
-                                </div>  
+                        </div>
+                        <h6 class="project-card__contributors__heading">Contributors</h6>
+                      </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+                  </div>
+              
+              
+              
+              
+                </div>
+              
+              </div>
+
+              <div class="work-collection__item">
+              
+                <div class="project-card demo1">
+                  <router-link to="/project/james-ryan">
+                    <div class="project-card__image">
+                      <img src="./image/james-ryan/james-ryan__thumb.jpg" alt="">
+                      <div class="project-card__status project-card__status--completed">Completed</div>
+                    </div>
+                  </router-link>
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">James Ryan - Portfolio Design</h4>
+                    <span class="project-card__date">20, September 2019</span>
+                    <div class="project-card__description">
+                      <!-- <p>Magic Visit is unique platform where admin user can handle websites which his viewers are visiting</p> -->
+                      <!-- <a href="" class="project-card__link">Visit Site</a> -->
+                    </div>
+              
+                    <div class="project-card__footer">
+                      <div class="project-card__technologies chips">
+                        <button class="project-card__technology chip">Portfolio Design</button>
+                        <button class="project-card__technology chip">Mockup Design</button>
+                        <button class="project-card__technology chip">UI / UX</button>
+                        <button class="project-card__technology chip">Visual Design</button>
+                      </div>
+              
+                      <div class="project-card__contributors">
+              
+                        <div class="project-card__contributors__avtars">
+                          <div class="project-card__contributor">
+                            <a href="./sahil.html"> <img src="./image/contributor-sahil.jpg" data-toggle="tooltip"
+                                data-placement="bottom" title="Sahil" alt=""></a>
                           </div>
-            
+                        </div>
+                        <h6 class="project-card__contributors__heading">Contributors</h6>
+                      </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+                  </div>
+              
+              
+              
+              
+                </div>
+              
+              </div>
+
+              <div class="work-collection__item">
+              
+                <div class="project-card demo1">
+                  <router-link to="/project/james-ryan">
+                    <div class="project-card__image">
+                      <img src="./image/runneat/runneat__thumb.jpg" alt="">
+                      <div class="project-card__status project-card__status--running">Running</div>
+                    </div>
+                  </router-link>
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Runneat - Web Application</h4>
+                    <span class="project-card__date">20, September 2019</span>
+                    <div class="project-card__description">
+                      <!-- <p>Magic Visit is unique platform where admin user can handle websites which his viewers are visiting</p> -->
+                      <!-- <a href="" class="project-card__link">Visit Site</a> -->
+                    </div>
+              
+                    <div class="project-card__footer">
+                      <div class="project-card__technologies chips">
+                        <button class="project-card__technology chip">Application Design</button>
+                        <button class="project-card__technology chip">React</button>
+                        <button class="project-card__technology chip">WebRTC</button>
+                        <button class="project-card__technology chip">UI / UX Design</button>
+                        <button class="project-card__technology chip">Real Time Video Chat</button>
+                      </div>
+              
+                      <div class="project-card__contributors">
+              
+                        <div class="project-card__contributors__avtars">
+                          <div class="project-card__contributor">
+                            <a href="./sahil.html"> <img src="./image/contributor-sahil.jpg" data-toggle="tooltip"
+                                data-placement="bottom" title="Sahil" alt=""></a>
+                          </div>
+                          <div class="project-card__contributor">
+                            <a href="./rohit.html">
+                              <img src="./image/contributor-rohit.jpg" data-toggle="tooltip" data-placement="bottom" title="Rohit" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <h6 class="project-card__contributors__heading">Contributors</h6>
+                      </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+                  </div>
+              
+              
+              
+              
+                </div>
+              
+              </div>
+
+
 
 
             </div>
@@ -496,23 +588,22 @@
         <div class="col-md-3 footer__section footer__section--about">
           <h3 class="footer__brand-name">Sky Rockets</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            nesciunt ipsa nisi reprehenderit beatae cupiditate odio asperiores
-            praesentium quos porro.
+            Skyrockets is not Space Station, it a community of developers and
+            designers , who are here to express their quality of work ,by
+            building industry standard products.
           </p>
         </div>
         <div class="col-md-3 footer__section footer__section--links">
           <h4 class="footer__section__heading">
-            External Links
+            Quick Links
           </h4>
-
+    
           <ul class="footer__list">
-            <li><a href="" class="footer__links">Home</a></li>
-            <li><a href="" class="footer__links">About</a></li>
-            <li><a href="" class="footer__links">Showcase</a></li>
-            <li><a href="" class="footer__links">Profiles</a></li>
-            <li><a href="" class="footer__links">Projects</a></li>
-            <li><a href="" class="footer__links">Contact</a></li>
+            <li><a href="index.html" class="footer__links">Home</a></li>
+            <li><a href="about.html" class="footer__links">About</a></li>
+            <li><a href="profiles.html" class="footer__links">Profiles</a></li>
+            <li><a href="work.html" class="footer__links">Projects</a></li>
+            <li><a href="contact.html" class="footer__links">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-3 footer__section footer__section--news">
@@ -520,15 +611,10 @@
             Newsletters
           </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            earum a expedita provident debitis commodi.
+            Subscribe to our newsletter to get latest updates.
           </p>
           <form action="" class="footer__form">
-            <input
-              type="email"
-              class="footer__input"
-              placeholder="Enter your email"
-            /><br />
+            <input type="email" class="footer__input" placeholder="Enter your email" /><br />
             <button class="footer__btn">Submit</button>
           </form>
         </div>
@@ -536,20 +622,15 @@
           <h4 class="footer__section__heading">
             Contact us
           </h4>
-
+    
           <form action="" class="footer__form">
-            <input
-              type="email"
-              class="footer__input"
-              placeholder="Enter your email"
-            /><br />
+            <input type="email" class="footer__input" placeholder="Enter your email" /><br />
             <textarea placeholder="Enter your message.."></textarea><br />
             <button class="footer__btn">Submit</button>
           </form>
         </div>
       </div>
     </footer>
-
 
     
  

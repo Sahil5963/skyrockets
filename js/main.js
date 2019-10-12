@@ -167,7 +167,10 @@ const ProjectFull = {
   template: `
   
   <div class="project-full" v-on:leave="leave()">
-
+<div class="project-full__actions">
+          <button class="project-full__close" v-on:click="goBack()" >Close</button>
+          <button class="project-full__expand" v-on:click="expandFull()">Expand Full</button>
+        </div>
   <div class="project-full__backdrop"  id="project-full__backdrop" v-on:click="goBack()" >
 
   </div>
@@ -181,10 +184,7 @@ const ProjectFull = {
           </defs><g transform="translate(-1492 -44)"><rect class="a" width="74" height="74" rx="37" transform="translate(1492 44)"/><g transform="translate(6 7)"><line class="b" x2="26.108" y2="26.108" transform="translate(1509.5 62.5)"/><line class="b" x1="26.108" y2="26.108" transform="translate(1509.5 62.5)"/></g></g></svg>
       </div> -->
 
-      <div class="project-full__actions">
-          <button class="project-full__close" v-on:click="goBack()" >Close</button>
-          <button class="project-full__expand" v-on:click="expandFull()">Expand Full</button>
-        </div>
+      
 
 
         <div class="project-section">
@@ -368,27 +368,28 @@ const ProjectFull = {
     },
     goBack() {
       projectFull
-        .to(".project-full__content", 0.2, { opacity: 0 })
-        .to(".project-full__wrapper", 0.6, {
-          width: "0%",
+
+        .to(".project-full__wrapper", 0.5, {
+          x: "10%",
+          opacity: "0",
           // width: $(window).width() > 600 ? "85%" : "100%",
           ease: Quint.easeInOut
         })
-        .to(".project-full", 0.1, { display: "none" });
-
-      setTimeout(() => {
-        this.$router.go(-1);
-      }, 1000);
+        .to(".project-full", 0.1, { display: "none" })
+        .call(() => {
+          this.$router.go(-1);
+        });
     }
   },
 
   mounted() {
     projectFull
       .to(".project-full", 0.1, { display: "block" })
-      .to(".project-full__wrapper", 0.1, { opacity: 1 })
       .to(".project-full__backdrop", 0.1, { opacity: 1 })
-      .to(".project-full__wrapper", 0.6, {
-        width: "85%",
+      .to(".project-full__wrapper", 0.4, {
+        x: "0%",
+        opacity: 1,
+        transformOrigin: "center",
         // width: $(window).width() > 600 ? "85%" : "100%",
         ease: Quint.easeInOut
       })
@@ -406,6 +407,7 @@ const ProjectFull = {
 const routes = [{ path: "/project/:name", component: ProjectFull }];
 
 const router = new VueRouter({
+  mode: "history",
   routes
 });
 
@@ -428,23 +430,19 @@ var projectsCollection = new Vue({
       projectMembers: null
     }
   },
+  created() {
+    console.log("created");
+    fetch("/sample.json")
+      .then(response => {
+        return response.json();
+      })
+      .then(myJson => {
+        for (i = 0; i < myJson.length; i++) {
+          this.project = myJson[i];
+        }
+      });
+  },
   methods: {
-    getData: function(id) {
-      const data = fetch("/sample.json")
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(myJson) {
-          console.log(myJson);
-
-          for (i = 0; i < myJson.length; i++) {
-            if (myJson[i].name == id) {
-              projectsCollection.project = { ...myJson[i] };
-            }
-          }
-        });
-    },
-
     goBack: function() {
       console.log("go back");
       this.$router.go(-1);

@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
+  display: block;
   z-index: 20;
   &.active {
   }
@@ -20,30 +20,29 @@
 
   &__wrapper {
     position: fixed;
-    bottom: 0;
     overflow: auto;
-    right: 0;
-    width: 0%;
+    width: 90%;
     height: 100%;
-    margin-left: auto;
+    right: 0;
+    bottom: 0%;
     background: white;
-    transform-origin: bottom;
+    transform: translateX(10%);
+    border-radius: 0px 0px 0px 0px;
+
     opacity: 0;
   }
 
   &__content {
-    position: relative;
     min-height: 100%;
-    opacity: 0;
+    opacity: 1;
   }
 
   &__actions {
     position: fixed;
     top: 16px;
     right: 28px;
-
+    z-index: 20;
     @media only screen and (max-width: 620px) {
-      top: unset;
       bottom: 10px;
       right: 20px;
       z-index: 40;

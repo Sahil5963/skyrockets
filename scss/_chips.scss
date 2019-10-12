@@ -1,5 +1,4 @@
 .chips {
-  margin: 1rem 0rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -7,21 +6,24 @@
 .chip {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
-  color: rgba(#000, 0.7);
+  color: rgba(#000, 0.6);
   border: none;
-  background: rgba(#000, 0.12);
+  background: #fff;
   padding: 0.3rem 1rem;
   border-radius: 120px;
   font-weight: 600;
   font-size: 0.8rem;
   transition: all 0.2s;
+  line-height: normal;
+  color: #2f2f2f;
+  border: 1px solid #c3c3c3;
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 0.4rem;
   }
 
   &:hover,
   &:focus {
-    background: rgba(#4813fc, 0.3);
+    background: rgba(#002fff, 0.16);
     outline: none;
   }
 }
